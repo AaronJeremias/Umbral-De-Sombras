@@ -69,10 +69,12 @@ div {
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-top: 1rem;
     width: 300px;
     height: 150px;
 }
 .slogan {
+    margin-top: -10px;
     text-align: center;
 }
 .foto-e-informacion {
