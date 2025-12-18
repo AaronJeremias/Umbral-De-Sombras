@@ -1,0 +1,52 @@
+body {
+    background:gray;
+    font-family: "Cinzel decorative", serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.caja-contenedora-principal {
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 800px;
+    height: 850px;
+}
+.caja-contenedora-secundaria {
+    background: crimson;
+    width: 100px;
+    height: auto;
+}
+.centro {
+    background: orange;
+    width: 600px;
+    height: auto;
+}
+.caja-titulo-slogan {
+    background: blue;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+.titulo {
+    background: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+}
+.slogan {
+    background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 30px;
+}
