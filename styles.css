@@ -28,6 +28,9 @@ body {
     height: auto;
 }
 /*Acá irá segmentado los articulos con display flex y column en direction. Ya que necesito el texto junto a la imagen en largo.*/
+.titulo-hoved:hover {
+    color: yellow;
+}
 .sub-titulos {
     background: saddlebrown;
     margin-bottom: -1px;
