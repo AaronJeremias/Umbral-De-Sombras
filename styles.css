@@ -1,6 +1,7 @@
 body {
     background:gray;
     font-family: "Cinzel decorative", serif;
+    text-shadow: 1px 1px 1px ;
     display: flex;
     align-items: center;
     justify-content: center;
