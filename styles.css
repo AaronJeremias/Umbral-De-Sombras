@@ -1,12 +1,41 @@
 body {
     background:gray;
     font-family: "Cinzel decorative", serif;
-    text-shadow: 1px 1px 1px ;
+    text-shadow: 1px 1px 1px yellow;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    width: 500px;
+    height: 100px;
+    color: #F5F5DC;
+
+}
+p {
+    color: #F5F5DC;
+}
+h3 {
+    color: #F5F5DC;
+}
+.imagenes-centro {
+    margin-right: 2rem;
+    background-size: cover;
+    width: 220px;
+    height: 300px;
+}
+.leer {
+    color: #F5F5DC;
+}
+footer {
+    color: #F5F5DC;
 }
 .caja-contenedora-principal {
     background: gray;
@@ -23,25 +52,28 @@ body {
     height: auto;
 }
 .centro {
-    background: orange;
+    background: url(./imagenes/FondoFantasia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
-    width: 600px;
-    height: auto;
+    width: 560px;
+    height: 900px;
 }
 /*Acá irá segmentado los articulos con display flex y column en direction. Ya que necesito el texto junto a la imagen en largo.*/
 .titulo-hoved:hover {
-    color: yellow;
+    text-shadow: 2px 2px 2px yellow;
+}
+.sub-titulos:hover {
+    text-shadow: 2px 2px 2px yellow;
 }
 .sub-titulos {
-    background: saddlebrown;
-    margin-bottom: -1px;
+    margin-top: 2.3rem;
     justify-content: center;
     text-align: center;
     width: 600px;
     height: auto;
 }
 .caja-contenedora-articulos-uno {
-    background: azure;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -53,43 +85,39 @@ body {
     gap: 10px;
 }
 .descripcion-general-sobre-mi {
-    background: violet;
     margin-top: -1px;
     align-items: center;
     justify-content: center;
-    font-size: small;
+    font-size: smaller;
     text-align: start;
     width: 260px;
     height: 300px;
 }
 .caja-titulo-slogan {
-    background: blue;
+    background: url(./imagenes/TablaSumeria2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    margin-bottom: -9px;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 100px;
 }
 .titulo {
-    background: violet;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 400px;
+    width: 500px;
     height: 50px;
 }
 .slogan {
-    background: rebeccapurple;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 400px;
+    width: 500px;
     height: 30px;
 }
 .copyright {
-    background: coral;
     margin-top: 1.3rem;
 }
