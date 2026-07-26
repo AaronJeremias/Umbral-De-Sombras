@@ -115,6 +115,10 @@ button {
 @media (max-width: 450px) {
     body {
         overflow-x: hidden;
+        background: url(./imagenes/FondoFantasia.png) no-repeat center/cover;
+    }
+    body > div {
+        background: none;
     }
     body > div > div:nth-of-type(2) > header {
         text-align: center;
