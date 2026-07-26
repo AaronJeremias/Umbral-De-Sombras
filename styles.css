@@ -54,6 +54,10 @@ button {
     border: none;
 }
 
+button:focus {
+    outline: none;
+}
+
 h1, h2 {
     margin: 0;
 }
@@ -107,6 +111,9 @@ button {
     body > div > div:nth-of-type(2) > main {
         width: 100vw;
     }
+    body > div > div:nth-of-type(2) > main {
+        margin-top: 10px;
+    }
     body > div > div:nth-of-type(2) > header {
         width: 100vw;
     }
@@ -114,14 +121,17 @@ button {
 
 @media (max-width: 450px) {
     body {
-        overflow-x: hidden;
         background: url(./imagenes/FondoFantasia.png) no-repeat center/cover;
+        overflow-x: hidden;
     }
     body > div {
         background: none;
     }
     body > div > div:nth-of-type(2) > header {
         text-align: center;
+    }
+    body > div > div:nth-of-type(2) > main {
+        margin-top: 0;
     }
     body > div > div:nth-of-type(2) > main > section > .container {
         display: flex;
@@ -133,6 +143,9 @@ button {
     }
     body > div > div:nth-of-type(2) > main > section:nth-of-type(2) > h3 {
         gap: 1rem;
+    }
+    body > div > div:nth-of-type(2) > main > section:nth-of-type(2) {
+        margin-top: -16px;
     }
     footer {
         text-align: center;
