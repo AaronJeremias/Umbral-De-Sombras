@@ -1,389 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
 body {
-    background: url(./imagenes/universo.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url(https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.gif) no-repeat center/cover;
     font-family: "Cinzel decorative", serif;
     color: #f5f5dc;
-    text-shadow: 1px 1px 1px yellow;
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    flex-flow: column wrap;
-    font-size: larger;
-    padding: 0;
-    margin: 0;
-    height: 890px;
+    padding: 1rem;
 }
-h1 {
-    font-size: 30px;
-    text-shadow: 2px 2px 2px black;
-    margin: 0;
-    padding: 0;
+
+
+body > div {
+    display: flex;
+    border: 10px double #f5f5dc;
 }
-h2,
+
 h3 {
-    font-size: 20px;
-    text-shadow: 2px 2px 2px black;
-    padding: 0;
-    margin: 0;
+    font-family: "Libre Baskerville", serif;
 }
 p {
-    font-size: 15px;
-    text-shadow: 2px 2px 2px black;
+    font-family:  "Libre Baskerville", serif;
 }
-/*Contenedores*/
 
-/*PRINCIPAL: Aquí está colocado el titulo y los elementos centrales de la web*/
-.caja-contenedora {
-    border: 8px double #f5f5dc;
+body > div > div:nth-of-type(2) {
     display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center; 
+    background: url(./imagenes/FondoFantasia.png) no-repeat center/cover;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    width: 650px;
-    height: 846px;
-}
-.contenedor-imagenes-espaciado {
     align-items: center;
-    justify-content: center;
-    width: 650px;
-    height: 846px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-}
-.imagen-central {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50px;
-    height: 75px;
-}
-.version {
-    position: fixed;
-    top: 10px;
-    left: 15px;
-}
-.cuenta-simbolo {
-    background: url(./imagenes/CuentaLogo03.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    width: 50px;
-    height: 50px;
-}
-.redes {
-    position: fixed;
-    border-radius: 1rem;
-    width: 50px;
-    height: 50px;
-}
-.uno {
-    background: url(./imagenes/InstagramLogo01.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    right: 20px;
-    bottom: 20px
-}
-.dos {
-    background: url(./imagenes/YoutubeLogo04.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    right: 20px;
-    bottom: 80px;
-    width: 51px;
-    height: 51px;
-}
-.contenedor-principal {
-    align-items: center;
-    text-align: center;
-    flex-flow: column wrap;
-    padding: 0;
-    margin: 0;
-    width: 550px;
-    height: auto;
-}
-.contenedor-secundario {
-    background: url(./imagenes/FondoFantasia.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: -12px;
-    background-repeat: no-repeat;
-    width: 550px;
-    height: 700px;
 }
 
-/*CONTENEDOR: UMBRAL DE SOMBRAS (PRINCIPAL)*/
-.articulo-pagina {
+body > div > div:nth-of-type(1), div:nth-child(3){
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: flex-start;
-    width: 550px;
-    height: 650px;
+    flex-direction: column;
+    width: 150px;
 }
-.quiensoy-section {
+
+header {
+    background: url(./imagenes/TablaSumeria2.png) no-repeat center/cover;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: left;
     padding: 1rem;
-    gap: 1rem;
-    width: 550px;
-    height: auto;
-}
-.informacion-personal {
-    padding: 1rem;
-    overflow: auto;
-    margin: 0;
-    padding: 0;
-    width: 260px;
-    height: 270px;
-}
-.contenedor-bienvenido {
-    width: 550px;
-    height: auto;
-}
-.contenedor-guia-navegacion {
-    background: url(./imagenes/IMÁGENES\ DE\ GIFS\ CON\ EFECTOS.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid #f5f5dc;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 300px;
-    padding: 1rem;
-}
-.imagenes-centrales {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 650px;
-    height: 845px;
+    width: 600px;
 }
 
-.section-guia-navegacion {
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    align-items: center;
-}
-
-.imagen-informacion {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 1rem;
-    padding:1rem;
-}
-.bienvenida {
-    background: url(./imagenes/Piramide01.gif);
-    background-size: auto;
-    background-repeat: no-repeat;
-    border: 4px solid #f5f5dc;
-    border-radius: 1rem;
-    padding: 10px;
-    overflow: auto;
-    text-align: left;
-    width: 220px;
-    height: 210px;
-}
-.titulo-bienvenido::before,
-.titulo-bienvenido::after {
-    content: "✨";
-}
-.guia-de-navegacion::before,
-.guia-de-navegacion::after {
-    content: "💛";
-}
-/*Secundario: Aquí etsán puestos los contenedores del titulo y slogan; entre otros como los articulos y sus secciones*/
-.titulo-y-slogan {
-    background: url(./imagenes/Desierto01.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    width: 550px;
-    height: 90px;
-}
-.logo {
-    width: 90px;
-    height: 90px;
-}
-.titulo {
-    margin: 0;
-    padding: 0;
-}
-.slogan {
-    margin: 0;
-    padding: 0;
-}
-
-/*Cierre*/
-
-/*Guía de navegación de la seccion principal :3*/
-
-.guia-de-navegacion {
-    width: 310px;
-}
-
-/*Cierre*/
-
-/*Menu*/
-
-nav ul {
-    background: url(./imagenes/fondofantasia03.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 550px;
-    height: 40px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-nav ul li {
-    display: inline;
-    font-size: 15px;
-    margin-right: 1rem;
-}
-/*TITULO*/
-.link:link,
-.link:visited,
-.link:active {
+button {
+    background: rgb(139, 135, 110);
     color: #f5f5dc;
-    text-shadow: 1px 1px 1px yellow;
-    text-decoration: none;
-}
-.link:hover {
-    color: #f5f5dc;
-    text-shadow: 2px 2px 2px yellow;
-    text-decoration: none;
-}
-/*Imagenes "QuienSoy"*/
-.Quien-soy {
+    border-radius: 1rem;
     padding: 1rem;
-    margin-top: 10px;
-    width: 550px;
-    height: 700px;
+    border: none;
 }
 
-/*IMAGENES = Algunas imagenes tienen pseudoclases agregadas con el nombre de lo visto en la misma.*/
-
-.imagen {
-    width: 250px;
-    height: auto;
-}
-.foto-mia {
-    width: 200px;
-    height: auto;
-}
-.oc-my-little-pony {
-    width: 260px;
-    height: 260px;
-}
-.imagen-blog {
-    width: 120px;
-    height: 150px;
-}
-
-/*Cierre*/
-
-/*FOOTER*/
-
-.footer {
-    background: url(./imagenes/fantasia05.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-shadow: 3px 3px 3px #f5f5dc;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    padding: 0;
+h1, h2 {
     margin: 0;
-    overflow: hidden;
-    width: 550px;
-    height: 28px;
-}
-.footer-texto {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    animation: scrollLeft 6s linear infinite;
-} 
-@keyframes scrollLeft { 
-    from {transform: translateX(-100%);} 
-    to {transform: translateX(100%);} 
 }
 
-/*Cierre*/
-
-.encabezado-blog {
-    margin-top: 11px;
-    display: flex;
-    padding: 1rem;
-    width: 550px;
-    height: auto;
-    gap: 1rem;
+header > h1 {
+    font-size: xx-large;
 }
 
-.encabezado-texto {
-    padding: 1rem;
-    overflow: auto;
-    text-align: left;
-    margin-top: -1.5px;
-    width: 350px;
-    height: 118px;
-}
-.comentario {
-    background: #Fdfd96;
-    color: black;
-    text-align: center;
+header > h2 {
     font-size: medium;
-    padding: 5px;
-    width: 500px;
-    height: auto;
 }
-.articulo-pagina {
+
+main > section{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-    width: 550px;
-    height: 250px;
 }
-.informacion-blog {
-    text-align: left;
-    overflow: auto;
-    padding: 1rem;
-    width: 350px;
-    height: 120px;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
-.input {
-    background-color: #Fdfd96;
-    color: black;
-    text-align: center;
-    padding: 1rem;
-    width: 400px;
-    height: 10px;
+
+.container > p {
+    width: 300px;
+}
+
+.descripcion {
+    flex-direction: column;
+    width: 300px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    body > div > div:nth-of-type(1), div:nth-of-type(3) {
+        display: none;
+    }
+    body > div {
+        border: none;
+    }
+    body > div > div:nth-of-type(2) > main {
+        width: 100vw;
+    }
+    body > div > div:nth-of-type(2) > header {
+        width: 100vw;
+    }
 }
